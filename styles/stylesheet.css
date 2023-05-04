@@ -1,0 +1,72 @@
+/* Navbar stylesheet */
+#navLogo {
+	height: 8vh;
+	width: 30vh;
+	margin-left: 43%;
+}
+
+#doneerKnop {
+	position: absolute;
+	background-color: #f07604;
+	color: #fff;
+	font-size: 2rem;
+	border: none;
+	border-radius: 10px;
+	padding: 10px 30px;
+	right: 1%;
+}
+
+#navmenu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	border-bottom: 1px solid #b8dce4;
+}
+
+.nav-links {
+	display: flex;
+	list-style: none;
+}
+
+.nav-links li {
+	margin-right: 20px;
+}
+
+.nav-links li:last-child {
+	margin-right: 0;
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: #000;
+	font-size: 14px;
+	font-family: sans-serif, Arial;
+}
+
+.nav-links a:hover {
+	color: #009688;
+}
+
+/* --------------------------------------------------------- */
+
+
+/* Header Styling */
+
+#headerImg {
+	height: 45vh;
+	width: 60%;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	margin-left: 20%;
+}
+
+/* --------------------------------------------------------- */
+
+/* Menu button styling */
+
+#menuButtons
+{
+	background-color: #b3b43e;
+	height: 15vh;
+}
