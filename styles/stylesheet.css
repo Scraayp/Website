@@ -1,3 +1,10 @@
+/*
+	Auteur: Michal Kolasa
+	Aanmaakdatum: 05/05/2023 15:28
+
+	Omschrijving: De stylesheet voor de website
+*/
+
 /* Navbar stylesheet */
 #navLogo {
 	height: 8vh;
@@ -68,5 +75,42 @@
 #menuButtons
 {
 	background-color: #b3b43e;
-	height: 15vh;
+	height: 20vh;
 }
+
+.row
+{
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 2vh;
+	width: 60%;
+	margin: auto;
+}
+
+.menuBtn 
+{
+	background-color: white;
+	width: 33%;
+	height: 7vh;
+	padding: 15px 0px 15px 0px;
+	border: none;
+	border-radius: 8px;
+	margin-right: 4%;
+}
+
+.menuImg
+{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	display: block;
+	padding-left: 1vw;
+	padding-bottom: 5vh;
+}
+
+.circleImg
+{
+	border-radius: 50%;
+}
+
+/* --------------------------------------------------------- */
