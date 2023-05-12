@@ -76,6 +76,7 @@
 {
 	background-color: #b3b43e;
 	height: 20vh;
+	margin-bottom: 3vh;
 }
 
 .row
@@ -96,6 +97,7 @@
 	border: none;
 	border-radius: 8px;
 	margin-right: 4%;
+
 }
 
 .menuImg
@@ -114,3 +116,117 @@
 }
 
 /* --------------------------------------------------------- */
+
+/* Article Styling */
+
+#articles
+{
+	margin-top: 5vh;
+	display: flex;
+	justify-content: space-between;
+	width: 60%;
+	margin: auto;
+}
+
+.actActl
+{
+	padding: 0px 5px 0px 14px;
+	width: calc(30% - 19px);
+	border: 3px solid #009688;
+	border-radius: 10px;
+	height: max-content;
+}
+
+.actActl a
+{
+	color: #008EA5 !important;
+	text-decoration: none;
+}
+.actActl a:hover
+{
+	text-decoration: underline;
+}
+
+.actActl h3
+{
+	text-align: center;
+	color: #8c8e14;
+	font-weight: 500;
+	text-transform: uppercase;
+	border-bottom: 1px solid #eaebeb;
+}
+
+.contactHeader
+{
+	color: #8c8e14;
+	text-transform: uppercase;
+}
+.phoneNum
+{
+	color: #008EA5;
+
+}
+
+.actActl ul
+{
+	list-style: none;
+	padding: 0;
+}
+.actActl li
+{
+	padding-top: 1vh;
+}
+
+/* --------------------------------------------------------- */
+
+/* Footer styling */
+
+/* Footer top */
+
+#footerTop
+{
+	background-color: #5C5A59;
+	height: 120vh;
+	width: 60%;
+	margin: auto;
+}
+
+#footerTop h1
+{
+	font-family: "Open Sans", arial, sans-serif;
+	text-align: center;
+	color: #fff;
+	font-size: 36px;
+	font-weight: 500;
+	padding-top: 1vh;
+}
+
+.partnerImg
+{
+	height: 230px;
+	width: 70%;
+	border-radius: 5%;
+}
+
+.partnerFoot {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 2vh;
+	width: 90%;
+	margin: auto;
+}
+
+#partnerFooterText
+{
+	background-color: #9FA735;
+	height: 50%;
+	margin: auto;
+	margin-right: 1vw;
+	border-radius: 10%;
+	padding: 5px 20px 5px 20px;
+}
+
+/* Footer bottom */
+#bottomFooter {
+	
+}
