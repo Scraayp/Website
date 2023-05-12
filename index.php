@@ -4,7 +4,9 @@
 
     Omschrijving: De hoofdpagina van dierentehuis Den Bosch.
 -->
-
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="nl">
     <head>
@@ -17,23 +19,10 @@
         <link rel="stylesheet" href="styles/stylesheet.css">
     </head>
     <body>
-        <nav>
-            <img src="./images/nav-logo.svg" id="navLogo">
-            <button id="doneerKnop">
-                Doneer
-            </button>
-            <section id="navmenu">
-                <ul class="nav-links">
-                    <li><a href="#">Over Ons</a></li>
-                    <li><a href="#">Dier gevonden</a></li>
-                    <li><a href="#">Onze dieren</a></li>
-                    <li><a href="#">Afstand doen</a></li>
-                    <li><a href="#">Steun ons</a></li>
-                    <li><a href="#">Vrijwilligerswerk</a></li>
-                    <li><a href="#">Hodenpension & Opvang</a></li>
-                </ul>
-            </section>
-        </nav>
+    <?php
+    include('/inetpub/wwwroot/Praktijk/Thema4/Opdracht/Website/functions/functions.php');
+    include("/inetpub/wwwroot/Praktijk/Thema4/Opdracht/Website/includes/nav.php")
+    ?>
         <main>
             <header>
                 <img src="./images/header.jpg" alt="Header" width="1140px" height="407px" id="headerImg">
@@ -111,52 +100,47 @@
         </main>
         <footer>
             <section id="footerTop">
-                <h1>Sponsoren</h1>
-                <div class="partnerFoot">
-                    <h3 id="partnerFooterText">Partner</h3>
-                    <div class="partner">
-                        <a href="#"><img src="images/dierenartsenpraktijk-bommelerwaard.jpg" alt="Partner" class="partnerImg"></a>
+                <section id="gridPartner">
+                    <div class="partnerImg">
+                        <img src="images/dierenartsenpraktijk-bommelerwaard.jpg" height="40">
                     </div>
-                    <div class="partner">
-                        <a href="#"><img src="images/slimkeukens.jpg" alt="Partner" class="partnerImg"></a>
+                    <div class="partnerImg">
+                        <img src="images/slimkeukens.jpg">
                     </div>
-                    <div class="partner">
-                        <a href="#"><img src="images/anoniem.jpg" alt="Partner" class="partnerImg"></a>
+                    <div class="partnerImg">
+                        <img src="images/anoniem.jpg">
                     </div>
-                </div>
-                <div class="partnerFoot">
-                    <h3 id="partnerFooterText">Goud</h3>
-                    <div class="partner">
-                        <a href="#"><img src="images/avans.png" alt="Partner" class="partnerImg"></a>
+                </section>
+                <section id="gridGoud">
+                    <div class="goudImg">
+                        <img src="images/avans.png">
                     </div>
-                    <div class="partner">
-                        <a href="#"><img src="images/johnnyjake.jpg" alt="Partner" class="partnerImg"></a>
+                    <div class="goudImg">
+                        <img src="images/johnnyjake.jpg">
                     </div>
-                </div>
-                <div class="partnerFoot">
-                    <h3 id="partnerFooterText">Zilver</h3>
-                    <div class="partner">
-                        <a href="#"><img src="images/drpet-online.jpg" alt="Partner" class="partnerImg"></a>
+                </section>
+                <section id="gridZilver">
+                    <div class="zilverImg">
+                        <img src="images/drpet-online.jpg">
                     </div>
-                    <div class="partner">
-                        <a href="#"><img src="images/linkit.jpg" alt="Partner" class="partnerImg"></a>
+                    <div class="zilverImg">
+                        <img src="images/linkit.jpg">
                     </div>
-                </div>
-                <div class="partnerFoot">
-                    <h3 id="partnerFooterText">Brons</h3>
-                    <div class="partner">
-                        <a href="#"><img src="images/vepa.png" alt="Partner" class="partnerImg"></a>
+                </section>
+                <section id="gridBrons">
+                    <div class="partnerImg">
+                        <img src="images/vepa.png">
                     </div>
-                    <div class="partner">
-                        <a href="#"><img src="images/owk.jpg" class="partnerImg"></a>
+                    <div class="partnerImg">
+                        <img src="images/owk.jpg">
                     </div>
-                    <div class="partner">
-                        <a href="#"><img src="images/kroonland.png" alt="Partner" class="partnerImg"></a>
+                    <div class="partnerImg">
+                        <img src="images/kroonland.png">
                     </div>
-                    <div class="partner">
-                        <a href="#"><img src="images/cedos.jpg" alt="Partner" class="partnerImg"></a>
+                    <div class="partnerImg">
+                        <img src="images/cedos.png">
                     </div>
-                </div>
+                </section>
             </section>
             <section id="bottomFooter">
                 <div id="left">

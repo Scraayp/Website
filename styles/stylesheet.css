@@ -93,11 +93,11 @@
 	background-color: white;
 	width: 33%;
 	height: 7vh;
-	padding: 15px 0px 15px 0px;
+	padding: 18px 0px 15px 25px;
 	border: none;
 	border-radius: 8px;
 	margin-right: 4%;
-
+	position: relative;
 }
 
 .menuImg
@@ -108,6 +108,8 @@
 	display: block;
 	padding-left: 1vw;
 	padding-bottom: 5vh;
+	top: 0;
+	left: 0;
 }
 
 .circleImg
@@ -191,42 +193,17 @@
 	margin: auto;
 }
 
-#footerTop h1
+#gridPartner, #gridZilver, #gridGoud
 {
-	font-family: "Open Sans", arial, sans-serif;
-	text-align: center;
-	color: #fff;
-	font-size: 36px;
-	font-weight: 500;
-	padding-top: 1vh;
+		display:grid;
+	grid-template-columns: auto auto auto;
+		grid-gap: 3%;
+		text-align: center;
 }
 
 .partnerImg
 {
-	height: 230px;
-	width: 70%;
-	border-radius: 5%;
-}
-
-.partnerFoot {
-	display: flex;
-	justify-content: space-evenly;
-	padding-top: 2vh;
-	width: 90%;
-	margin: auto;
-}
-
-#partnerFooterText
-{
-	background-color: #9FA735;
-	height: 50%;
-	margin: auto;
-	margin-right: 1vw;
+	background-color: white;
 	border-radius: 10%;
-	padding: 5px 20px 5px 20px;
-}
-
-/* Footer bottom */
-#bottomFooter {
-	
+	object-fit: cover;
 }
