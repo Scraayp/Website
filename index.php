@@ -92,7 +92,7 @@ session_start();
                     </p>
                     <h2 class="phoneNum">
                         073 641 24 17
-                    </h3>
+                    </h2>
                     <h4 class="contactHeader">Openingstijden voor bezoekers</h4>
                     <p>maandag t/m zaterdag: op afspraak<br>zondag: gesloten</p>
                 </article>
@@ -100,57 +100,39 @@ session_start();
         </main>
         <footer>
             <section id="footerTop">
+                <h1 id="mainSponsoren">Sponsoren</h1>
+                <h2 id="partnerText">Partner</h2>
                 <section id="gridPartner">
-                    <div class="partnerImg">
-                        <img src="images/dierenartsenpraktijk-bommelerwaard.jpg" height="40">
-                    </div>
-                    <div class="partnerImg">
-                        <img src="images/slimkeukens.jpg">
-                    </div>
-                    <div class="partnerImg">
-                        <img src="images/anoniem.jpg">
-                    </div>
+                    <img src="images/dierenartsenpraktijk-bommelerwaard.jpg" class="partnerImg">
+                    <img src="images/slimkeukens.jpg" class="partnerImg">
+                    <img src="images/anoniem.jpg" class="partnerImg">
                 </section>
+                <h2 id="goudText">Goud</h2>
                 <section id="gridGoud">
-                    <div class="goudImg">
-                        <img src="images/avans.png">
-                    </div>
-                    <div class="goudImg">
-                        <img src="images/johnnyjake.jpg">
-                    </div>
+                    <img src="images/avans.png" class="partnerImg">
+                    <img src="images/johnnyjake.jpg" class="partnerImg">
                 </section>
+                <h2 id="zilverText">Zilver</h2>
                 <section id="gridZilver">
-                    <div class="zilverImg">
-                        <img src="images/drpet-online.jpg">
-                    </div>
-                    <div class="zilverImg">
-                        <img src="images/linkit.jpg">
-                    </div>
+                        <img src="images/drpet-online.jpg" class="partnerImg">
+                        <img src="images/linkit.jpg" class="partnerImg">
                 </section>
+                <h2 id="bronsText">Brons</h2>
                 <section id="gridBrons">
-                    <div class="partnerImg">
-                        <img src="images/vepa.png">
-                    </div>
-                    <div class="partnerImg">
-                        <img src="images/owk.jpg">
-                    </div>
-                    <div class="partnerImg">
-                        <img src="images/kroonland.png">
-                    </div>
-                    <div class="partnerImg">
-                        <img src="images/cedos.png">
-                    </div>
+                        <img src="images/vepa.png" class="partnerImg">
+                        <img src="images/owk.jpg" class="partnerImg">
+                        <img src="images/kroonland.png" class="partnerImg">
+                        <img src="images/cedos.jpg" class="partnerImg">
                 </section>
             </section>
             <section id="bottomFooter">
-                <div id="left">
-                    Volg ons op social media!
-                    <
+                <div id="bottomFooterLeft">
+                    <p>Volg ons op social media</p>
                 </div>
-                <div id="middle">
+                <div id="bottomFooterMiddle">
 
                 </div>
-                <div id="right">
+                <div id="bottomFooterRight">
                     
                 </div>
             </section>

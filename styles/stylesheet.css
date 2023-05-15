@@ -188,22 +188,100 @@
 #footerTop
 {
 	background-color: #5C5A59;
-	height: 120vh;
+	height: auto;
+	padding-bottom: 6vh;
 	width: 60%;
 	margin: auto;
 }
 
-#gridPartner, #gridZilver, #gridGoud
+#gridPartner, #gridZilver, #gridGoud, #gridBrons
 {
-		display:grid;
-	grid-template-columns: auto auto auto;
-		grid-gap: 3%;
-		text-align: center;
+	display: flex;
+	width: 80%;
+	padding-left: 10%;
+	padding-top: 2vh;
 }
 
 .partnerImg
 {
 	background-color: white;
 	border-radius: 10%;
-	object-fit: cover;
+	height: 16vh;
+	width: 15vw;
+	margin-left: 1vw;
+
+}
+#gridBrons img
+{
+	width: 10vw;
+	height: 13vh;
+}
+
+#partnerText
+{
+	background-color: #9FA735;
+	width: 6%;
+	text-align: center;
+	margin-top: 3vh;
+	position: absolute;
+	margin-left: 0.3vw;
+	border-radius: 10px;
+}
+
+#goudText
+{
+	background-color: #CFB76C;
+	width: 6%;
+	text-align: center;
+	margin-top: 3vh;
+	position: absolute;
+	margin-left: 0.3vw;
+	border-radius: 10px;
+}
+
+#zilverText
+{
+	background-color: #C0C2C4;
+	width: 6%;
+	text-align: center;
+	margin-top: 3vh;
+	position: absolute;
+	margin-left: 0.3vw;
+	border-radius: 10px;
+}
+
+#bronsText
+{
+	background-color: #C79974;
+	width: 6%;
+	text-align: center;
+	margin-top: 3vh;
+	position: absolute;
+	margin-left: 0.3vw;
+	border-radius: 10px;
+}
+
+#mainSponsoren
+{
+	text-align: center;
+	color: #fff;
+	font-size: 36px;
+	padding-top: 1vh;
+}
+
+/* Footer Bottom */
+
+#bottomFooter
+{
+	background-color: #D7D6D5;
+	height: 120vh;
+	width: 60%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+}
+
+#bottomFooterLeft
+{
+
 }
