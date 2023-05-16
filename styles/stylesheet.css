@@ -274,14 +274,47 @@
 #bottomFooter
 {
 	background-color: #D7D6D5;
-	height: 120vh;
+	height: 30vh;
 	width: 60%;
 	margin: auto;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 }
 
 #bottomFooterLeft
 {
+	padding-top: 10vh;
+	padding-left: 1vw;
+}
 
+.socialMedia
+{
+	height: 30px;
+	width: 30px;
+}
+
+#bottomFooterMiddle img
+{
+	padding-top: 3vh;
+	height: 100px;
+	width: 100px;
+}
+
+#bottomFooterRight
+{
+	padding-top: 20vh;
+	margin-right: 1vw;
+	text-align: right;
+}
+
+#bottomFooterRight a
+{
+	text-decoration: none;
+	color: #000;
+}
+
+#bottomFooterRight a:hover
+{
+	text-decoration: underline;
 }

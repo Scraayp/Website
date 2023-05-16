@@ -128,12 +128,28 @@ session_start();
             <section id="bottomFooter">
                 <div id="bottomFooterLeft">
                     <p>Volg ons op social media</p>
+                    <img src="images/youtube.png" class="socialMedia">
+                    <img src="images/instagram.png" class="socialMedia">
+                    <img src="images/facebook.png" class="socialMedia">
                 </div>
                 <div id="bottomFooterMiddle">
-
+                    <img src="images/dierenlot.jpg">
+                    <img src="images/cbf.png">
+                    <img src="images/anbi.svg">
+                    <?php
+                    if(alreadyLogin() == true) {
+                        echo '<p>Ingelogd als: ' . strtolower($_SESSION["user"]) . '</p>';
+                    }else if(alreadyLogin() == false){
+                        echo '<p>Niet ingelogd!</p>';
+                    }else {
+                        echo '<p>Inlog onbekend</p>';
+                    }
+                    ?>
                 </div>
                 <div id="bottomFooterRight">
-                    
+                    <a href="#">Contact</a>
+                    <br>
+                    <a href="#">Cookiebeleid (EU)</a>
                 </div>
             </section>
         </footer>
