@@ -2,16 +2,18 @@
     Auteur: Michal Kolasa
     Aanmaakdatum: 26/04/2023 18:27
 
-    Omschrijving: De hoofdpagina van dierentehuis Den Bosch.
+    Omschrijving: De info pagina met vrijwilligers van dierentehuis Den Bosch.
 -->
 <?php
-session_start();
+    include('../functions/functions.php');
+    // Start de sessie om later in het bestand sessie data te kunnen lezen
+    session_start();
 ?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
     <title>
-        Home - Dierentehuis Den Bosch
+        Info - Dierentehuis Den Bosch
     </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,27 +24,27 @@ session_start();
 <body>
 <main>
     <?php
-    include('../functions/functions.php');
+        include("../includes/nav.php");
 
-    include("/inetpub/wwwroot/Praktijk/Thema4/Opdracht/Website/includes/nav.php")
-    ?>
-
-    <?php
+//        Als je niet ingelogd bent, stuur naar login
         if(!$_POST && alreadyLogin() == false){
             header("Location: ./login.php");
             exit();
         }
-
+//        Start connectie met database
         startConnection();
 
         $username = '';
         $password = '';
 
-        if($_POST){
+        if($_POST)
+        {
             $username = $_POST["uname"];
             $password = $_POST['psw'];
-        }else if($_SESSION["user"] && $_SESSION["psw"]){
-            $username = strtolower($_SESSION["user"]);
+        }
+        else if($_SESSION["user"] && $_SESSION["psw"])
+        {
+            $username = $_SESSION["user"];
             $password = $_SESSION["psw"];
         }
 
@@ -54,8 +56,11 @@ session_start();
 
         $record = $result->fetch(PDO::FETCH_ASSOC);
 
-        if($record){
-            if($_POST && $_POST["remember"] && alreadyLogin() == false){
+        if($record)
+        {
+//            Create cookie als remember aan staat
+            if($_POST && $_POST["remember"] && alreadyLogin() == false)
+            {
                 createLoginSession($username, $password);
             }
 
@@ -81,10 +86,14 @@ session_start();
             }
             echo "</tr>";
             echo "</table>";
-        }else {
+        }
+        else
+        {
             header("Location: ./login.php?wrong=true");
             exit();
         }
+
+        include("../includes/footer.php")
     ?>
 </main>
 </body>

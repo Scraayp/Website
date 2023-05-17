@@ -2,16 +2,18 @@
     Auteur: Michal Kolasa
     Aanmaakdatum: 26/04/2023 18:27
 
-    Omschrijving: De hoofdpagina van dierentehuis Den Bosch.
+    Omschrijving: De info pagina met vrijwilligers van dierentehuis Den Bosch.
 -->
 <?php
-session_start();
+    include('../functions/functions.php');
+    // Start de sessie om later in het bestand sessie data te kunnen lezen
+    session_start();
 ?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
     <title>
-        Home - Dierentehuis Den Bosch
+        Login - Dierentehuis Den Bosch
     </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,16 +24,19 @@ session_start();
 <body>
 <main>
     <?php
-    include('/inetpub/wwwroot/Praktijk/Thema4/Opdracht/Website/functions/functions.php');
-    include("/inetpub/wwwroot/Praktijk/Thema4/Opdracht/Website/includes/nav.php");
+        include("../includes/nav.php");
     ?>
 
     <?php
-        if(alreadyLogin()){
+        if(alreadyLogin())
+        {
             header("Location: ./info.php");
             exit();
         }
-        if($_GET && $_GET['wrong']){
+
+//        Check of er een get wrong is dat de inlog fout is. Geef dan een alert aan op het scherm
+        if(isset($_GET['wrong']))
+        {
             echo "<div class='alert'>";
             echo "<span class='closebtn' onclick='this.parentElement.style.display=`none`;'>&times;</span>";
             echo "<strong>Fout!</strong> U heeft een verkeerde wachtwoord of gebruikersnaam ingevuld";
@@ -54,6 +59,9 @@ session_start();
             </div>
         </form>
     </section>
+    <?php
+        include("../includes/footer.php")
+    ?>
 </main>
 </body>
 </html>

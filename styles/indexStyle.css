@@ -1,0 +1,128 @@
+/**
+Auteur: Michal Kolasa
+Aanmaakdatum: 26/04/2023 18:27
+
+Omschrijving: De styling van de index pagina
+*/
+
+/* Header Styling */
+
+#headerImg
+{
+    height: 45vh;
+    width: 60%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 20%;
+}
+
+/* --------------------------------------------------------- */
+
+/* Menu button styling */
+
+#menuButtons
+{
+    background-color: #b3b43e;
+    height: 20vh;
+    margin-bottom: 3vh;
+}
+
+.row
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2vh;
+    width: 60%;
+    margin: auto;
+}
+
+.menuBtn
+{
+    background-color: white;
+    width: 33%;
+    height: 7vh;
+    padding: 18px 0px 15px 25px;
+    border: none;
+    border-radius: 8px;
+    margin-right: 4%;
+    position: relative;
+}
+
+.menuImg
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: block;
+    padding-left: 1vw;
+    padding-bottom: 5vh;
+    top: 0;
+    left: 0;
+}
+
+.circleImg
+{
+    border-radius: 50%;
+}
+
+/* --------------------------------------------------------- */
+
+/* Article Styling */
+
+#articles
+{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+}
+
+.actActl
+{
+    padding: 0px 5px 0px 14px;
+    width: calc(30% - 19px);
+    border: 3px solid #009688;
+    border-radius: 10px;
+    height: max-content;
+}
+
+.actActl a
+{
+    color: #008EA5 !important;
+    text-decoration: none;
+}
+.actActl a:hover
+{
+    text-decoration: underline;
+}
+
+.actActl h3
+{
+    text-align: center;
+    color: #8c8e14;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 1px solid #eaebeb;
+}
+
+.contactHeader
+{
+    color: #8c8e14;
+    text-transform: uppercase;
+}
+.phoneNum
+{
+    color: #008EA5;
+
+}
+
+.actActl ul
+{
+    list-style: none;
+    padding: 0;
+}
+.actActl li
+{
+    padding-top: 1vh;
+}

@@ -2,17 +2,26 @@
 	Auteur: Michal Kolasa
 	Aanmaakdatum: 05/05/2023 15:28
 
-	Omschrijving: De stylesheet voor de website
+	Omschrijving: De algemene stylesheet van elke pagina
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*
+{
+	font-family: 'Open Sans', 'Arial', sans-serif;
+}
+
 /* Navbar stylesheet */
-#navLogo {
+#navLogo
+{
 	height: 8vh;
 	width: 30vh;
 	margin-left: 43%;
 }
 
-#doneerKnop {
+#doneerKnop
+{
 	position: absolute;
 	background-color: #f07604;
 	color: #fff;
@@ -23,7 +32,8 @@
 	right: 1%;
 }
 
-#navmenu {
+#navmenu
+{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -31,152 +41,33 @@
 	border-bottom: 1px solid #b8dce4;
 }
 
-.nav-links {
+.nav-links
+{
 	display: flex;
 	list-style: none;
 }
 
-.nav-links li {
+.nav-links li
+{
 	margin-right: 20px;
 }
 
-.nav-links li:last-child {
+.nav-links li:last-child
+{
 	margin-right: 0;
 }
 
-.nav-links a {
+.nav-links a
+{
 	text-decoration: none;
 	color: #000;
 	font-size: 14px;
 	font-family: sans-serif, Arial;
 }
 
-.nav-links a:hover {
+.nav-links a:hover
+{
 	color: #009688;
-}
-
-/* --------------------------------------------------------- */
-
-
-/* Header Styling */
-
-#headerImg {
-	height: 45vh;
-	width: 60%;
-	margin-top: 1vh;
-	margin-bottom: 1vh;
-	margin-left: 20%;
-}
-
-/* --------------------------------------------------------- */
-
-/* Menu button styling */
-
-#menuButtons
-{
-	background-color: #b3b43e;
-	height: 20vh;
-	margin-bottom: 3vh;
-}
-
-.row
-{
-	display: flex;
-	justify-content: space-evenly;
-	padding-top: 2vh;
-	width: 60%;
-	margin: auto;
-}
-
-.menuBtn 
-{
-	background-color: white;
-	width: 33%;
-	height: 7vh;
-	padding: 18px 0px 15px 25px;
-	border: none;
-	border-radius: 8px;
-	margin-right: 4%;
-	position: relative;
-}
-
-.menuImg
-{
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	display: block;
-	padding-left: 1vw;
-	padding-bottom: 5vh;
-	top: 0;
-	left: 0;
-}
-
-.circleImg
-{
-	border-radius: 50%;
-}
-
-/* --------------------------------------------------------- */
-
-/* Article Styling */
-
-#articles
-{
-	margin-top: 5vh;
-	display: flex;
-	justify-content: space-between;
-	width: 60%;
-	margin: auto;
-}
-
-.actActl
-{
-	padding: 0px 5px 0px 14px;
-	width: calc(30% - 19px);
-	border: 3px solid #009688;
-	border-radius: 10px;
-	height: max-content;
-}
-
-.actActl a
-{
-	color: #008EA5 !important;
-	text-decoration: none;
-}
-.actActl a:hover
-{
-	text-decoration: underline;
-}
-
-.actActl h3
-{
-	text-align: center;
-	color: #8c8e14;
-	font-weight: 500;
-	text-transform: uppercase;
-	border-bottom: 1px solid #eaebeb;
-}
-
-.contactHeader
-{
-	color: #8c8e14;
-	text-transform: uppercase;
-}
-.phoneNum
-{
-	color: #008EA5;
-
-}
-
-.actActl ul
-{
-	list-style: none;
-	padding: 0;
-}
-.actActl li
-{
-	padding-top: 1vh;
 }
 
 /* --------------------------------------------------------- */

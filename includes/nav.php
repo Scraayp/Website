@@ -1,6 +1,6 @@
 <nav>
-    <a href="/Praktijk/Thema4/Opdracht/Website/index.php">
-        <img src="/Praktijk/Thema4/Opdracht/Website/images/nav-logo.svg"id="navLogo">
+    <a href="../index.php">
+        <img src="../images/nav-logo.svg" id="navLogo">
     </a>
     <button id="doneerKnop">
         Doneer
@@ -15,10 +15,13 @@
             <li><a href="#">Vrijwilligerswerk</a></li>
             <li><a href="#">Hodenpension & Opvang</a></li>
             <?php
-                if(alreadyLogin()){
-                     echo '<li><a href="/Praktijk/Thema4/Opdracht/Website/pages/info.php">Medewerkers</a></li>';
-                }else {
-                    echo '<li><a href="/Praktijk/Thema4/Opdracht/Website/pages/login.php">Login</a></li>';
+                if(alreadyLogin())
+                {
+                     echo '<li><a href="../pages/info.php">Medewerkers</a></li>';
+                }
+                else
+                {
+                    echo '<li><a href="../pages/login.php">Login</a></li>';
                 }
             ?>
         </ul>

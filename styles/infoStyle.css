@@ -1,35 +1,45 @@
+/**
+Auteur: Michal Kolasa
+Aanmaakdatum: 26/04/2023 18:27
+
+Omschrijving: De styling van de info pagina
+*/
+
 table
 {
     margin: auto;
     width: 100%;
     border-collapse: collapse;
     margin: 25px 0;
+    /*Grote font size met 0.9 em*/
     font-size: 0.9em;
     font-family: sans-serif;
     min-width: 400px;
+    /*Zorg voor een kleine schaduw*/
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-
-
 }
-table thead tr {
+table thead tr
+{
     background-color: #009688;
     color: #ffffff;
     text-align: left;
 }
 
 table th,
-table td {
+table td
+{
     padding: 12px 15px;
 }
 
-table tbody tr {
+table tbody tr
+{
+    /*Border bottom voor een overduidelijke kleur verschil groen*/
     border-bottom: 1px solid #009688;
 }
 
-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-}
 
-table tbody tr:last-of-type {
+/*Zorg voor een border*/
+table tbody tr:last-of-type
+{
     border-bottom: 2px solid #009688;
 }
