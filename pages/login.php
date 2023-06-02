@@ -25,9 +25,7 @@
 <main>
     <?php
         include("../includes/nav.php");
-    ?>
 
-    <?php
         if(alreadyLogin())
         {
             header("Location: ./info.php");
